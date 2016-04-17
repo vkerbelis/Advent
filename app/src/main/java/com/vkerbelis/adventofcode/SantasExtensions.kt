@@ -12,6 +12,10 @@ inline fun <R> Scanner.fold(initial: R, operation: (R, String) -> R): R {
     return accumulator
 }
 
+fun String.scanner(): Scanner = Scanner(this)
+
+fun String.scanner(delimiter: String): Scanner = Scanner(this).useDelimiter(delimiter)
+
 fun Scanner.toIntList(): List<Int> {
     val list = ArrayList<Int>()
     forEach { list.add(it.toInt()) }

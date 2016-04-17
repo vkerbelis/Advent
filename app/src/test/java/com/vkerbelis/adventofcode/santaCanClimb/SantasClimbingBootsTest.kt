@@ -9,8 +9,11 @@ import org.junit.Test
  */
 class SantasClimbingBootsTest {
 
-    private val EXPECTED_SANTA_FLOOR = 280
-    private val EXPECTED_FIRST_BASEMENT_POSITION = 1797
+    companion object {
+        private val EXPECTED_SANTA_FLOOR = 280
+        private val EXPECTED_FIRST_BASEMENT_POSITION = 1797
+    }
+
     private lateinit var santasBoots: SantasClimbingBoots
 
     @Before
